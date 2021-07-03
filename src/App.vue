@@ -1,12 +1,19 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    <VideoPlayer/>
   </div>
 </template>
+
+<script>
+import VideoPlayer from '@/components/VideoPlayer'
+
+export default {
+  name: 'App',
+  components: {
+    VideoPlayer
+  }
+}
+</script>
 
 <style>
 #app {
