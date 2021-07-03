@@ -5,7 +5,7 @@
         <h3>{{this.activeVideo.title}}</h3>
         <div class="row">
             <p>{{this.activeVideo.views}} views</p> 
-            <p>{{this.activeVideo.likes}} <button>Like</button></p>
+            <p>{{this.activeVideo.likes}} <button @click="addLike">Like</button></p>
         </div>
     </div>
     <div class="video-list">
@@ -86,13 +86,16 @@ export default {
     }
   },
   methods:{
-  chooseVideo(video){
+    chooseVideo(video){
       //SET VIDEO AS ACTIVE VIDEO
       this.activeVideo = video;
       //INCREASE THE VIDEOS VIEWS BY 1
       video.views += 1;
+    },
+    addLike(){
+    this.activeVideo.likes += 1;
+    }
   }
-}
 }
 </script>
 
