@@ -1,6 +1,17 @@
 <template>
   <div class="video-player">
-    Welcome to VueTube
+    <div class="video-list">
+    <div :key="video.id" v-for="video in videos" class="thumbnail">
+        <div class="thumbnail-img">
+          <img :src="video.thumbnail" />
+        </div>
+        <div class="thumbnail-info">
+          <h3>{{video.title}}</h3>
+          <p>{{video.creator}}</p>
+          <p class="thumbnail-views">{{video.views}} Views</p>
+        </div>
+    </div>
+</div>
   </div>
 </template>
 
