@@ -1,7 +1,12 @@
 <template>
   <div class="video-player">
-      <div class="video-container">
+    <div class="video-container">
         <iframe width="640" height="360" :src="this.activeVideo.youtubeURL" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <h3>{{this.activeVideo.title}}</h3>
+        <div class="row">
+            <p>{{this.activeVideo.views}} views</p> 
+            <p>{{this.activeVideo.likes}} <button>Like</button></p>
+        </div>
     </div>
     <div class="video-list">
     <div :key="video.id" v-for="video in videos" class="thumbnail">
