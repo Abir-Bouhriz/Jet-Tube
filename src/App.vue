@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <img style="width:140px; margin:14px;" src="/logo.png"/>
     <VideoPlayer/>
   </div>
 </template>
