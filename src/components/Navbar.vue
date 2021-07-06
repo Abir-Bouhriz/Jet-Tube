@@ -79,7 +79,7 @@
         </template>
 
         <v-card>
-          <v-list>
+          <v-list class="overflow-y-auto" style="max-height: calc(100vh - 100px)">
             <v-list-item>
               <v-list-item-avatar>
                 <img :src="`profile.jpg`" />
@@ -92,11 +92,9 @@
                 >
               </v-list-item-content>
             </v-list-item>
-          </v-list>
 
           <v-divider></v-divider>
 
-          <v-list>
             <v-list-item router to="/channels/10">
               <v-list-item-icon>
                 <v-icon>mdi-account-box</v-icon>
@@ -160,6 +158,44 @@
                 <v-icon>mdi-longitude</v-icon>
               </v-list-item-icon>
               <v-list-item-title>Location: Algeria</v-list-item-title>
+              <v-list-item-action>
+                <v-btn icon>
+                  <v-icon color="grey lighten-1">mdi-menu-right</v-icon>
+                </v-btn>
+              </v-list-item-action>
+            </v-list-item>
+            <v-list-item router to="/signin">
+              <v-list-item-icon>
+                <v-icon>mdi-cog</v-icon>
+              </v-list-item-icon>
+              <v-list-item-title>Settings</v-list-item-title>
+            </v-list-item>
+            <v-list-item router to="/signin">
+              <v-list-item-icon>
+                <v-icon>mdi-account-box</v-icon>
+              </v-list-item-icon>
+              <v-list-item-title>Your data in Jet-Tube</v-list-item-title>
+            </v-list-item>
+            <v-list-item router to="/signin">
+              <v-list-item-icon>
+                <v-icon>mdi-help-circle</v-icon>
+              </v-list-item-icon>
+              <v-list-item-title>Help</v-list-item-title>
+            </v-list-item>
+            <v-list-item router to="/signin">
+              <v-list-item-icon>
+                <v-icon>mdi-comment-alert</v-icon>
+              </v-list-item-icon>
+              <v-list-item-title>Send Feedback</v-list-item-title>
+            </v-list-item>
+            <v-list-item router to="/signin">
+              <v-list-item-icon>
+                <v-icon>mdi-keyboard-settings</v-icon>
+              </v-list-item-icon>
+              <v-list-item-title>Keyboard shortcut</v-list-item-title>
+            </v-list-item>
+            <v-list-item router to="/studio">
+              <v-list-item-title>Restricted Mode: Off</v-list-item-title>
               <v-list-item-action>
                 <v-btn icon>
                   <v-icon color="grey lighten-1">mdi-menu-right</v-icon>
