@@ -1,5 +1,6 @@
 <template>
   <div id="watch">
+    <Navbar />
     <v-container fluid>
       <v-row>
         <v-col cols="11" class="mx-auto">
@@ -50,7 +51,7 @@
                       <v-list-item three-line>
                         <v-list-item-avatar size="50"
                           ><v-img
-                            src="https://randomuser.me/api/portraits/men/1.jpg"
+                            src="profile.jpg"
                           ></v-img
                         ></v-list-item-avatar>
                         <v-list-item-content class="align-self-auto">
@@ -93,7 +94,7 @@
                       <v-list-item three-line class="pl-0">
                         <v-list-item-avatar size="50"
                           ><v-img
-                            src="https://randomuser.me/api/portraits/men/1.jpg"
+                            src="profile.jpg"
                           ></v-img
                         ></v-list-item-avatar>
                         <v-list-item-content class="align-self-auto">
@@ -128,7 +129,7 @@
                       <v-list-item three-line class="pl-0 mt-2">
                         <v-list-item-avatar size="50"
                           ><v-img
-                            src="https://randomuser.me/api/portraits/men/1.jpg"
+                            src="profile.jpg"
                           ></v-img
                         ></v-list-item-avatar>
                         <v-list-item-content>
@@ -169,7 +170,7 @@
                             <v-list-item three-line class="pl-0">
                               <v-list-item-avatar class="mt-0" size="40"
                                 ><v-img
-                                  src="https://randomuser.me/api/portraits/men/1.jpg"
+                                  src="profile.jpg"
                                 ></v-img
                               ></v-list-item-avatar>
                               <v-list-item-content
@@ -228,7 +229,7 @@
                       <v-col class="mx-auto" cols="3" sm="3" md="5" lg="5">
                         <!-- <v-responsive max-height="100%"> -->
                         <v-img
-                          class="align-center"
+                          class="align-center" height="120px"
                           src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
                         >
                         </v-img>
@@ -266,7 +267,11 @@
 </template>
 
 <script>
+import Navbar from '@/components/Navbar'
 export default {
+  components:{
+    Navbar
+  },
   data: () => ({
     loading: true,
     videoLoading: true,
@@ -331,8 +336,8 @@ export default {
 video {
   max-width: 100%;
   /* min-height: 360px; */
-  /* width: 640px;
-  height: 360px; */
+   width: 1000px;
+  height: 400px; 
 }
 
 #btns {
