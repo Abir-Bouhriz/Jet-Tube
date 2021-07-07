@@ -81,7 +81,7 @@
       :temporary="$route.name === 'Watch'"
       id="nav"
     >
-      <div tag="div" class="v-navigation-drawer__content" v-bar>
+      <div tag="div" class="v-navigation-drawer__content" >
         <v-list dense nav class="py-0" tag="div">
           <v-list-item
             :class="{
