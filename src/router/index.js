@@ -1,7 +1,8 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
-import Watch from '../components/Watch'
+import Channel from '../components/Channel'
+import VideoPlay from '../components/VideoPlay'
 
 Vue.use(VueRouter)
 
@@ -12,9 +13,14 @@ const routes = [
     component: Home
   },
   {
-    path: '/watch',
-    name: 'Watch',
-    component: Watch
+    path: '/videoPlay',
+    name: 'VideoPlay',
+    component: VideoPlay
+  },
+  {
+    path: '/channel',
+    name: 'Channel',
+    component: Channel
   },
   {
     path: '/about',
