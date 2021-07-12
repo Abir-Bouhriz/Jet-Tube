@@ -72,7 +72,7 @@
   data: () => ({
     loading: true,
     video: {
-      url: '/watch',
+      url: '/videoPlay',
       thumb: 'https://cdn.vuetifyjs.com/images/cards/halcyon.png',
       title: 'Ellie Goulding - Burn (Official Video)',
       views: '1.4 B',
