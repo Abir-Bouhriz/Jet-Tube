@@ -1,12 +1,10 @@
 <template>
   <nav id="navbar">
-    <v-app-bar class="white" flat app clipped-left>
+    <v-app-bar flat app clipped-left>
       <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
-      <v-toolbar-title class="font-weight-bold"
-        ><router-link to="/" class="black--text" style="text-decoration: none"
-          >Jet-Tube</router-link
-        ></v-toolbar-title
-      >
+      <v-toolbar-title class="font-weight-bold">
+        <v-img src="logo1.png" height="40" width="40"></v-img>
+      </v-toolbar-title>
       <v-spacer></v-spacer>
       <v-text-field
         flat
@@ -316,7 +314,6 @@ export default {
     height: 250px;
     width: 100%;
     max-width: 500px;
-    background: #dfe9fe;
   }
 
   .vb > .vb-dragger {
@@ -343,7 +340,6 @@ export default {
 
   .v-navigation-drawer__content:hover .vb > .vb-dragger > .vb-dragger-styler {
     width: 10px;
-    background-color: #e0e0e0;
   }
 
   .vb.vb-scrolling-phantom > .vb-dragger > .vb-dragger-styler {
