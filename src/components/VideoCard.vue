@@ -7,7 +7,7 @@
     router
     :to="video.url"
   >
-    <v-img :src="video.thumb" height="200px"></v-img>
+    <v-img :src="video.thumbnail" height="200px"></v-img>
     <v-row no-gutters>
       <v-col cols="2" v-if="card.type != 'noAvatar'">
         <v-list-item class="pl-0 pt-3" router :to="channel.url">
