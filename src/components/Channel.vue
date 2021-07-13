@@ -213,13 +213,7 @@ export default {
 </script>
 
 <style>
-.nav-bgcolor {
-  background: #f9f9f9;
-}
 
-.card {
-  background: #f9f9f9 !important;
-}
 
 .v-tab {
   margin-right: 4em;
