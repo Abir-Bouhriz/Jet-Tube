@@ -15,7 +15,7 @@
                 <v-responsive>
                   <iframe width="1000" height="400" :src="this.activeVideo.youtubeURL"  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                 </v-responsive>
-                <v-card flat tile class="card">
+                <v-card flat class="transparent">
                   <v-card-title class="pl-0 pb-0">
                       {{ this.activeVideo.title }}</v-card-title>
                   <div class="d-flex flex-wrap justify-space-between" id="btns">
@@ -46,8 +46,18 @@
                             <v-btn text v-on="menu" > ... </v-btn>
                         </template>
                         <v-list>
-                            <v-list-item>
-                            </v-list-item>
+                          <v-list-item>
+                            <v-list-item-icon class="mr-3"
+                              ><v-icon>mdi-flag</v-icon></v-list-item-icon
+                            >
+                            <v-list-item-title>Report</v-list-item-title>
+                          </v-list-item>
+                          <v-list-item>
+                            <v-list-item-icon class="mr-3"
+                              ><v-icon>mdi-message-text</v-icon></v-list-item-icon
+                            >
+                            <v-list-item-title>Open transcript</v-list-item-title>
+                          </v-list-item>
                         </v-list>
                       </v-menu>
                     </v-card-actions>
@@ -56,7 +66,7 @@
                 <v-row class="justify-space-between">
                   <v-col cols="6" sm="6" md="5" lg="5">
                     <v-card class="transparent" flat>
-                      <v-list-item three-line>
+                      <v-list-item three-line to="/channel">
                         <v-list-item-avatar size="50"
                           ><v-img
                             src="profile.jpg"
@@ -142,14 +152,14 @@
                         ></v-list-item-avatar>
                         <v-list-item-content>
                           <v-list-item-title
-                            class="font-weight-medium caption mb-1"
+                            class="font-weight-medium title mb-1"
                             >Bouhriz Abir
                             <span class="font-weight-light grey--text">
                               1 day ago</span
                             ></v-list-item-title
                           >
                           <v-list-item-subtitle
-                            class="black--text text--darken-4 caption"
+                            class="body-1"
                             >Lorem ipsum, dolor sit amet consectetur adipisicing
                             elit. Tempore deleniti aspernatur nostrum eius
                             dignissimos repellendus. Fugiat, aspernatur deserunt
@@ -158,6 +168,7 @@
                             dolorem.</v-list-item-subtitle
                           >
                           <!-- <v-list-item-action> -->
+                            
                           <div>
                             <!-- <button
                               class="caption font-weight-bold d-inline-block pa-2 grey--text text--darken-3"
@@ -234,7 +245,7 @@
                   tile
                   large
                 >
-                  <v-card class="card" tile flat>
+                  <v-card class="card transparent" flat style="cursor:pointer;">
                     <v-row no-gutters>
                       <v-col class="mx-auto" cols="3" sm="3" md="5" lg="5">
                         <!-- <v-responsive max-height="100%"> -->
@@ -288,9 +299,9 @@ let videos = [
     creator: "Marques Brownlee",
     likes: 0,
     dislikes: 0,
-    createdAt: '6 hours ago',
+    createdAt: '2 years ago',
     subscribers: '100k',
-    views: 0,
+    views: 4526,
     description:
           'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa vel inventore voluptatum reiciendis delectus quibusdam incidunt consequuntur, nostrum aperiam, natus quidem qui corrupti reprehenderit quaerat neque voluptatibus? Ullam, maiores temporibus! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa vel inventore voluptatum reiciendis delectus, Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa vel inventore voluptatum reiciendis delectus'
   },
@@ -303,9 +314,9 @@ let videos = [
     creator: "Marques Brownlee",
     likes: 0,
     dislikes: 0,
-    createdAt: '6 hours ago',
+    createdAt: '8 months ago',
     subscribers: '100k',
-    views: 0,
+    views: 1598,
     description:
           'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa vel inventore voluptatum reiciendis delectus quibusdam incidunt consequuntur, nostrum aperiam, natus quidem qui corrupti reprehenderit quaerat neque voluptatibus? Ullam, maiores temporibus! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa vel inventore voluptatum reiciendis delectus, Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa vel inventore voluptatum reiciendis delectus'
   },
@@ -320,7 +331,7 @@ let videos = [
     dislikes: 0,
     createdAt: '6 hours ago',
     subscribers: '100k',
-    views: 0,
+    views: 78,
     description:
           'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa vel inventore voluptatum reiciendis delectus quibusdam incidunt consequuntur, nostrum aperiam, natus quidem qui corrupti reprehenderit quaerat neque voluptatibus? Ullam, maiores temporibus! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa vel inventore voluptatum reiciendis delectus, Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa vel inventore voluptatum reiciendis delectus'
   },
@@ -333,9 +344,9 @@ let videos = [
     creator: "Marques Brownlee",
     likes: 0,
     dislikes: 0,
-    createdAt: '6 hours ago',
+    createdAt: '10 hours ago',
     subscribers: '100k',
-    views: 0,
+    views: 50,
     description:
           'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa vel inventore voluptatum reiciendis delectus quibusdam incidunt consequuntur, nostrum aperiam, natus quidem qui corrupti reprehenderit quaerat neque voluptatibus? Ullam, maiores temporibus! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa vel inventore voluptatum reiciendis delectus, Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa vel inventore voluptatum reiciendis delectus'
   },
@@ -348,9 +359,9 @@ let videos = [
     creator: "Marques Brownlee",
     likes: 0,
     dislikes: 0,
-    createdAt: '6 hours ago',
+    createdAt: '2 months ago',
     subscribers: '100k',
-    views: 0,
+    views: 325,
     description:
           'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa vel inventore voluptatum reiciendis delectus quibusdam incidunt consequuntur, nostrum aperiam, natus quidem qui corrupti reprehenderit quaerat neque voluptatibus? Ullam, maiores temporibus! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa vel inventore voluptatum reiciendis delectus, Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa vel inventore voluptatum reiciendis delectus'
   }
@@ -385,6 +396,12 @@ export default {
     this.activeVideo.likes += 1;
     },
     disLike(){
+    this.activeVideo.dislikes += 1;
+    },
+    addLikeComment(){
+    this.activeVideo.likes += 1;
+    },
+    disLikeComment(){
     this.activeVideo.dislikes += 1;
     },
     show(event) {
