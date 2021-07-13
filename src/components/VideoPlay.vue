@@ -28,11 +28,12 @@
                     </v-card-subtitle>
                     <v-card-actions class="pt-0 pl-0 grey--text">
                       <v-btn text @click="addLike"
-                        ><v-icon class="pr-2">mdi-thumb-up</v-icon> {{this.activeVideo.likes}}</v-btn
+                        ><v-icon class="pr-2">mdi-thumb-up</v-icon> 
+                        {{this.activeVideo.likes}}</v-btn
                       >
-                      <v-btn text >
+                      <v-btn text @click="subLike">
                           <v-icon class="pr-2">mdi-thumb-down</v-icon>
-                        1.5k</v-btn>
+                       {{this.activeVideo.dislikes}}</v-btn>
                       <v-btn text>
                           <v-icon>mdi-share</v-icon> 
                         Share</v-btn>
@@ -286,6 +287,7 @@ let videos = [
     youtubeURL: "https://www.youtube.com/embed/jn9mHzXJIV0",
     creator: "Marques Brownlee",
     likes: 0,
+    dislikes: 0,
     createdAt: '6 hours ago',
     subscribers: '100k',
     views: 0,
@@ -300,6 +302,7 @@ let videos = [
     youtubeURL: "https://www.youtube.com/embed/UIwdCN4dV6w",
     creator: "Marques Brownlee",
     likes: 0,
+    dislikes: 0,
     createdAt: '6 hours ago',
     subscribers: '100k',
     views: 0,
@@ -314,6 +317,7 @@ let videos = [
     youtubeURL: "https://www.youtube.com/embed/ctx4YBEdOxo",
     creator: "Marques Brownlee",
     likes: 0,
+    dislikes: 0,
     createdAt: '6 hours ago',
     subscribers: '100k',
     views: 0,
@@ -328,6 +332,7 @@ let videos = [
     youtubeURL: "https://www.youtube.com/embed/pqQrL1K0Z5g",
     creator: "Marques Brownlee",
     likes: 0,
+    dislikes: 0,
     createdAt: '6 hours ago',
     subscribers: '100k',
     views: 0,
@@ -342,6 +347,7 @@ let videos = [
     youtubeURL: "https://www.youtube.com/embed/KB4_WIPE7vo",
     creator: "Marques Brownlee",
     likes: 0,
+    dislikes: 0,
     createdAt: '6 hours ago',
     subscribers: '100k',
     views: 0,
@@ -377,6 +383,9 @@ export default {
     },
     addLike(){
     this.activeVideo.likes += 1;
+    },
+    subLike(){
+    this.activeVideo.dislikes += 1;
     },
     show(event) {
       if (event.target.innerText === 'SHOW MORE') {
