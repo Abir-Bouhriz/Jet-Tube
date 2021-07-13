@@ -31,7 +31,7 @@
                         ><v-icon class="pr-2">mdi-thumb-up</v-icon> 
                         {{this.activeVideo.likes}}</v-btn
                       >
-                      <v-btn text @click="subLike">
+                      <v-btn text @click="disLike">
                           <v-icon class="pr-2">mdi-thumb-down</v-icon>
                        {{this.activeVideo.dislikes}}</v-btn>
                       <v-btn text>
@@ -384,7 +384,7 @@ export default {
     addLike(){
     this.activeVideo.likes += 1;
     },
-    subLike(){
+    disLike(){
     this.activeVideo.dislikes += 1;
     },
     show(event) {
