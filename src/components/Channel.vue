@@ -181,11 +181,20 @@ export default {
     loading: true,
     items: ['Home', 'Videos', 'Playlists', 'Community', 'Channels', 'about'],
     video: {
-      url: '/watch/12',
-      thumb: 'https://picsum.photos/id/11/500/300',
-      title: 'Top western road trips',
-      views: '9.6k',
-      createdAt: '6 hours ago'
+      id: 1,
+    url: '/videoPlay',
+    title: "18-core iMac Pro Review: Not a Trap!",
+    thumbnail:
+      "https://i.ytimg.com/vi/jn9mHzXJIV0/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLAvJvk4k_UNB9nst4pFP-txM1TLZA",
+    youtubeURL: "https://www.youtube.com/embed/jn9mHzXJIV0",
+    creator: "Marques Brownlee",
+    likes: 0,
+    createdAt: '6 hours ago',
+    subscribers: '100k',
+    views: '1.4 B',
+    description:
+          'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa vel inventore voluptatum reiciendis delectus quibusdam incidunt consequuntur, nostrum aperiam, natus quidem qui corrupti reprehenderit quaerat neque voluptatibus? Ullam, maiores temporibus! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa vel inventore voluptatum reiciendis delectus, Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa vel inventore voluptatum reiciendis delectus'
+  
     },
     channel: {
       url: '/channel',
