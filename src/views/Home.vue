@@ -80,9 +80,9 @@
     youtubeURL: "https://www.youtube.com/embed/jn9mHzXJIV0",
     creator: "Marques Brownlee",
     likes: 0,
-    createdAt: '6 hours ago',
+    createdAt: '2 years ago',
     subscribers: '100k',
-    views: '1.4 B',
+    views: 4526,
     description:
           'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa vel inventore voluptatum reiciendis delectus quibusdam incidunt consequuntur, nostrum aperiam, natus quidem qui corrupti reprehenderit quaerat neque voluptatibus? Ullam, maiores temporibus! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa vel inventore voluptatum reiciendis delectus, Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa vel inventore voluptatum reiciendis delectus'
   },
@@ -98,12 +98,10 @@
     mounted() {
     setTimeout(() => {
       this.loading = false
-    }, 3000)
+    }, 2000)
     }
   }
 </script>
 <style lang="scss">
-.card {
-  background: #f9f9f9 !important;
-}
+
 </style>
