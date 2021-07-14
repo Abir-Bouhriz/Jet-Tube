@@ -1,4 +1,4 @@
-# vuetube
+# jet-tube
 
 ## Project setup
 ```
