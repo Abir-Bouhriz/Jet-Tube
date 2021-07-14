@@ -139,7 +139,6 @@ export default {
     }
     },
     mounted() {
-      // this.$vuetify.theme.themes.light.primary = '#ff0000'
       const theme = localStorage.getItem("dark_theme");
         if (theme) {
             if (theme == "true") {
