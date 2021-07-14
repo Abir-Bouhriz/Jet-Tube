@@ -3,7 +3,7 @@
     <v-app-bar flat app clipped-left>
       <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
       <v-toolbar-title class="font-weight-bold">
-        <v-img src="logo1.png" height="40" width="40"></v-img>
+        <img style="width:140px; " src="/logo2.png"/>
       </v-toolbar-title>
       <v-spacer></v-spacer>
       <v-text-field
@@ -39,11 +39,11 @@
           </v-tooltip>
         </template>
         <v-list>
-          <v-list-item router to="/studio">
+          <v-list-item>
             <v-list-item-icon class="mr-3"
               ><v-icon>mdi-play-box-outline</v-icon></v-list-item-icon
             >
-            <v-list-item-title>Upload video</v-list-item-title>
+            <v-list-item-title><UploadVideo /></v-list-item-title>
           </v-list-item>
           <v-list-item>
             <v-list-item-icon class="mr-3"
@@ -146,6 +146,7 @@
 
 <script>
 import AccountList from '@/components/AccountList'
+import UploadVideo from '@/components/UploadVideo'
 export default {
   data: () => ({
     drawer: false,
@@ -281,7 +282,8 @@ export default {
     searchText: ''
   }),
   components: {
-      AccountList
+      AccountList,
+      UploadVideo
     },
   methods: {
     search() {
