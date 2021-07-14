@@ -8,20 +8,20 @@
           <v-list-item-title v-bind="attrs" v-on="on">Upload Video</v-list-item-title>
       </template>
     <v-card>
-      <div class="d-flex justify-space-between mb-5" id="modal-header">
+      <div class="d-flex justify-space-between mb-5">
         <v-card-title class="py-3">Upload Video</v-card-title>
         <div class="mt-3 mr-2">
           <v-btn text>
-            <v-icon>mdi-message-alert</v-icon>
+            <v-icon color="grey darken-2">mdi-message-alert</v-icon>
           </v-btn>
           <v-btn icon text @click="dialog = false">
-            <v-icon>mdi-close</v-icon>
+            <v-icon color="grey darken-2">mdi-close</v-icon>
           </v-btn>
         </div>
       </div>
-
+      <v-divider></v-divider>
       <v-card-text
-        class="d-flex flex-column align-center my-md-12 py-md-12 my-sm-8 py-sm-8 my-xs-0 py-xs-0 my-12 py-12"
+        class="d-flex flex-column align-center pa-4"
       >
         <div  class="text-center">
             <v-btn
