@@ -170,13 +170,6 @@
                           <!-- <v-list-item-action> -->
                             
                           <div>
-                            <!-- <button
-                              class="caption font-weight-bold d-inline-block pa-2 grey--text text--darken-3"
-                              style="cursor: pointer; outline: none"
-                              @click.stop.prevent="showReply"
-                            >
-                              REPLY
-                            </button> -->
                             <v-btn
                               text
                               small
