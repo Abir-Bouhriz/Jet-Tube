@@ -2,7 +2,7 @@
   <nav id="navbar">
     <v-app-bar flat app clipped-left>
       <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
-      <v-toolbar-title class="font-weight-bold">
+      <v-toolbar-title>
         <img style="width:140px; " src="/logo2.png"/>
       </v-toolbar-title>
       <v-spacer></v-spacer>
