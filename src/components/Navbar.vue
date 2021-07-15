@@ -100,7 +100,7 @@
               >{{ parentItem.header }}</v-subheader
             >
             <v-list-item
-              v-for="(item, i) in parentItem.pages"
+              v-for="item in parentItem.pages"
               :key="item.title"
               link
               class="mb-0"
@@ -114,7 +114,7 @@
               </v-list-item-icon>
               <v-list-item-avatar v-else class="mr-5">
                 <img
-                  :src="`https://randomuser.me/api/portraits/men/${i}.jpg`"
+                  :src="item.img"
                 />
               </v-list-item-avatar>
               <v-list-item-content>
@@ -201,22 +201,26 @@ export default {
           {
             title: 'Traversy Media',
             link: '#tm',
-            icon: 'mdi-badge-account'
+            icon: 'mdi-badge-account',
+            img:'traversy.jpg'
           },
           {
-            title: 'The New Boston',
+            title: 'Deligent Dev',
             link: '#tn',
-            icon: 'mdi-badge-account'
+            icon: 'mdi-badge-account',
+            img:'deligent.jpg'
           },
           {
             title: 'The Net Ninija',
             link: '#nn',
-            icon: 'mdi-badge-account'
+            icon: 'mdi-badge-account',
+            img:'netNinja.jpg'
           },
           {
-            title: 'Chris Hawks',
+            title: 'AAE IdeaPro',
             link: '#ch',
-            icon: 'mdi-badge-account'
+            icon: 'mdi-badge-account',
+            img:'ideaPro.jpg'
           }
         ]
       },
