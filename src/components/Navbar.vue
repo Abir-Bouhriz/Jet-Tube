@@ -19,7 +19,7 @@
       ></v-text-field>
       <v-tooltip bottom>
             <template v-slot:activator="{ on: tooltip }">
-              <v-btn icon v-on="tooltip"
+              <v-btn icon v-on="tooltip" class="hidden-sm-and-down"
                 ><v-icon size="25">mdi-microphone</v-icon></v-btn
               >
             </template>
