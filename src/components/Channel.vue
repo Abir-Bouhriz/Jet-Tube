@@ -115,7 +115,7 @@
 import VideoCard from '@/components/VideoCard'
 export default {
   data: () => ({
-    tab: null,
+    tab: 0,
     loading: true,
     items: ['Home', 'Videos', 'Playlists', 'Community', 'Channels', 'about'],
     video: {
