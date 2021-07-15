@@ -104,12 +104,11 @@
               :key="item.title"
               link
               class="mb-0"
-              router
-              :to="item.link"
+              :href="item.link" target="_blank"
               exact
               active-class="active-item"
             >
-              <v-list-item-icon v-if="parentItem.header !== 'Subscriptions'">
+              <v-list-item-icon v-if="parentItem.header !== 'Subscriptions'" >
                 <v-icon>{{ item.icon }}</v-icon>
               </v-list-item-icon>
               <v-list-item-avatar v-else class="mr-5">
@@ -117,8 +116,8 @@
                   :src="item.img"
                 />
               </v-list-item-avatar>
-              <v-list-item-content>
-                <v-list-item-title class=" font-weight-medium subtitle-2">{{
+              <v-list-item-content >
+                <v-list-item-title  class=" font-weight-medium subtitle-2">{{
                   item.title
                 }}</v-list-item-title>
               </v-list-item-content>
@@ -130,7 +129,6 @@
             <span v-if="link.text === 'Terms'" class="mb-2 d-block"> </span>
             <v-btn
               href
-              router
               :to="link.link"
               text
               class="text-capitalize px-1"
@@ -158,7 +156,7 @@ export default {
           { title: 'Trending', link: '/trending', icon: 'mdi-fire' },
           {
             title: 'Subscriptions',
-            link: '#s',
+            link: '#',
             icon: 'mdi-youtube-subscription'
           }
         ]
@@ -168,29 +166,29 @@ export default {
         pages: [
           {
             title: 'Library',
-            link: '#l',
+            link: '#',
             icon: 'mdi-play-box-multiple'
           },
           {
             title: 'History',
-            link: '/history',
+            link: '#',
             icon: 'mdi-history'
           },
           {
             title: 'Your videos',
-            link: '/channels/ddd',
+            link: '#',
             icon: 'mdi-play-box-outline'
           },
 
           {
             title: 'Watch later',
-            link: '#wl',
+            link: '#',
             icon: 'mdi-clock'
           },
 
           {
             title: 'Liked videos',
-            link: '#lw',
+            link: '#',
             icon: 'mdi-thumb-up'
           }
         ]
@@ -200,25 +198,25 @@ export default {
         pages: [
           {
             title: 'Traversy Media',
-            link: '#tm',
+            link: 'https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA',
             icon: 'mdi-badge-account',
             img:'traversy.jpg'
           },
           {
             title: 'Deligent Dev',
-            link: '#tn',
+            link: 'https://www.youtube.com/channel/UCLrTZVMYP_VsEyzxTAMcIcQ',
             icon: 'mdi-badge-account',
             img:'deligent.jpg'
           },
           {
             title: 'The Net Ninija',
-            link: '#nn',
+            link: 'https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg',
             icon: 'mdi-badge-account',
             img:'netNinja.jpg'
           },
           {
             title: 'AAE IdeaPro',
-            link: '#ch',
+            link: 'https://www.youtube.com/channel/UClbUBqDWE3kzIHaAQ8IOYuQ',
             icon: 'mdi-badge-account',
             img:'ideaPro.jpg'
           }
@@ -229,17 +227,17 @@ export default {
         pages: [
           {
             title: 'Jet-Tube Premium',
-            link: '#vp',
+            link: '#',
             icon: 'mdi-youtube'
           },
           {
             title: 'Gaming',
-            link: '#g',
+            link: '#',
             icon: 'mdi-youtube-gaming'
           },
           {
             title: 'Live',
-            link: '#li',
+            link: '#',
             icon: 'mdi-access-point'
           }
         ]
@@ -249,22 +247,22 @@ export default {
         pages: [
           {
             title: 'Setting',
-            link: '#sg',
+            link: '#',
             icon: 'mdi-cog'
           },
           {
             title: 'Report history',
-            link: '#rh',
+            link: '#',
             icon: 'mdi-flag'
           },
           {
             title: 'Help',
-            link: '#hp',
+            link: '#',
             icon: 'mdi-help-circle'
           },
           {
             title: 'Send feedback',
-            link: '#f',
+            link: '#',
             icon: 'mdi-message-alert'
           }
         ]

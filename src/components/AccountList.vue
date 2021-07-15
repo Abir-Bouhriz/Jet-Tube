@@ -117,7 +117,7 @@
               </v-list-item-icon>
               <v-list-item-title>Keyboard shortcut</v-list-item-title>
             </v-list-item>
-            <v-list-item router to="/studio">
+            <v-list-item>
               <v-list-item-title>Restricted Mode: Off</v-list-item-title>
               <v-list-item-action>
                 <v-btn icon>
