@@ -238,7 +238,8 @@
                   tile
                   large
                 >
-                  <v-card class="card transparent" flat style="cursor:pointer;">
+                <v-hover v-slot:default="{ hover }">
+                  <v-card class="card transparent" flat :elevation="hover ? 1 : 0" style="cursor:pointer;">
                     <v-row no-gutters>
                       <v-col class="mx-auto" cols="3" sm="3" md="5" lg="5">
                         <!-- <v-responsive max-height="100%"> -->
@@ -270,6 +271,7 @@
                       </v-col>
                     </v-row>
                   </v-card>
+                </v-hover>
                 </v-skeleton-loader>
               </div>
             </v-col>
