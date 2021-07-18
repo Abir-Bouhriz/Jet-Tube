@@ -2,8 +2,9 @@
   <nav id="navbar">
     <v-app-bar flat app clipped-left>
       <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
-      <v-toolbar-title>
-        <img style="width:140px; " src="/logo2.png"/>
+      <v-toolbar-title  class="font-weight-bold">
+        <img style="width:45px;" src="/logo2.png"/>
+       Jet-Tube
       </v-toolbar-title>
       <v-spacer></v-spacer>
       <v-text-field
