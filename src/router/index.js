@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Channel from '../components/Channel'
 import VideoPlay from '../components/VideoPlay'
+import History from '../components/History'
 
 Vue.use(VueRouter)
 
@@ -21,6 +22,11 @@ const routes = [
     path: '/channel',
     name: 'Channel',
     component: Channel
+  },
+  {
+    path: '/history',
+    name: 'History',
+    component: History
   },
   {
     path: '/about',
