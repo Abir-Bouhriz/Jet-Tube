@@ -4,7 +4,7 @@
       <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
       <v-toolbar-title  class=" mt-3">
         <img style="width:45px;" src="/logo2.png"/>
-       <v-btn text class="mb-3 font-weight-bold">Jet-Tube</v-btn>
+       <v-btn text plain class="mb-3 font-weight-bold" to="/">Jet-Tube</v-btn>
       </v-toolbar-title>
       <v-spacer></v-spacer>
       <v-text-field
@@ -104,7 +104,7 @@
               v-for="item in parentItem.pages"
               :key="item.title"
               link
-              class="mb-0"
+              class="mb-0" 
               :href="item.link" target="_blank"
               exact
               active-class="active-item"
@@ -154,7 +154,7 @@ export default {
         header: null,
         pages: [
           { title: 'Home', link: '/', icon: 'mdi-home' },
-          { title: 'Trending', link: '/trending', icon: 'mdi-fire' },
+          { title: 'Trending', link: '#', icon: 'mdi-fire' },
           {
             title: 'Subscriptions',
             link: '#',
@@ -172,7 +172,7 @@ export default {
           },
           {
             title: 'History',
-            link: '#',
+            link: '/history',
             icon: 'mdi-history'
           },
           {
