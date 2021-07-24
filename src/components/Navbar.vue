@@ -105,7 +105,7 @@
               :key="item.title"
               link
               class="mb-0" 
-              :href="item.link" target="_blank"
+              :to="item.link" 
               exact
               active-class="active-item"
             >
@@ -118,7 +118,7 @@
                 />
               </v-list-item-avatar>
               <v-list-item-content >
-                <v-list-item-title  class=" font-weight-medium subtitle-2">{{
+                <v-list-item-title :href="item.link" target="_blank" class=" font-weight-medium subtitle-2">{{
                   item.title
                 }}</v-list-item-title>
               </v-list-item-content>
