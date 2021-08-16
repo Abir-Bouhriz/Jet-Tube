@@ -256,15 +256,15 @@
                             class="pl-2 pt-0 subtitle-1 font-weight-bold"
                             style="line-height: 1"
                           >
-                            Top western road trips
+                            {{video.title}}
                           </v-card-title>
 
                           <v-card-subtitle
                             class="pl-2 pt-2 pb-0"
                             style="line-height: 1"
                           >
-                            Bouhriz Abir<br />
-                            9.6k views<v-icon>mdi-circle-small</v-icon>6 hours
+                            {{video.creator}}<br />
+                            {{video.views}}k views<v-icon>mdi-circle-small</v-icon>{{video.createdAt}}
                             ago
                           </v-card-subtitle>
                         </div>
