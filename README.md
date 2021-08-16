@@ -4,7 +4,7 @@
 ![Jetlight studio](https://img.shields.io/badge/Made%20by-Jetlight%20studio-blue.svg?color=082544)
 
 ## Description:
- A youtube clone template built with vue & vuetify, which contains a home page, channel page, video details page with Comments & Replies, history page and upload video Modal.
+ A youtube clone template built with vue & vuetify, which contains a home page, channel page, video details page with comments & replies, history page and upload video modal. with dark/light mode feature.
 
 ## ScreenShots:
 <img src="screenshots/1.png" /> 
