@@ -1,14 +1,10 @@
 <template>
   <div id="channel-home">
-    <v-parallax
-      height="230"
-      src="https://cdn.vuetifyjs.com/images/parallax/material.jpg"
-    ></v-parallax>
+    <Navbar />
     <div class="nav-bgcolor">
       <div id="channel-header">
         <v-container class="py-0">
-          <v-row class="justify-space-between">
-            <v-col cols="12" sm="5" md="5" lg="5" offset-md="1">
+          <v-row>
               <v-card class="transparent" flat>
                 <v-list-item three-line>
                   <v-list-item-avatar size="80"
@@ -26,13 +22,14 @@
                   </v-list-item-content>
                 </v-list-item>
               </v-card>
-            </v-col>
-            <v-col cols="12" sm="5" md="3" lg="3">
-              <v-btn class="red white--text mt-6" tile large depressed
-                >Subscribed</v-btn
+              <v-spacer></v-spacer>
+              <v-btn class="blue white--text mt-6" tile large depressed
+                >Custumize channel</v-btn
               >
-              <v-btn icon class="ml-5 mt-6"><v-icon>mdi-bell</v-icon></v-btn>
-            </v-col>
+              <v-btn class="blue white--text mt-6 ml-2" tile large depressed
+                >Manage videos</v-btn
+              >
+            
           </v-row>
         </v-container>
       </div>
@@ -113,6 +110,7 @@
 
 <script>
 import VideoCard from '@/components/VideoCard'
+import Navbar from '@/components/Navbar'
 export default {
   data: () => ({
     tab: 0,
@@ -140,7 +138,8 @@ export default {
     }
   }),
   components: {
-    VideoCard
+    VideoCard,
+    Navbar
   },
   mounted() {
     setTimeout(() => {
