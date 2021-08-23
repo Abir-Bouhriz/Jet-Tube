@@ -2,7 +2,7 @@
   <div id="channel-home">
     <Navbar />
     <div class="nav-bgcolor">
-      <div id="channel-header">
+      <div id="channel-header" class="mt-5">
         <v-container class="py-0">
           <v-row>
               <v-card class="transparent" flat>
