@@ -69,7 +69,7 @@
                       <v-list-item three-line to="/channel">
                         <v-list-item-avatar size="50"
                           ><v-img
-                            src="profile.jpg"
+                            src="profile.png"
                           ></v-img
                         ></v-list-item-avatar>
                         <v-list-item-content class="align-self-auto">
@@ -112,7 +112,7 @@
                       <v-list-item three-line class="pl-0">
                         <v-list-item-avatar size="50"
                           ><v-img
-                            src="profile.jpg"
+                            src="profile.png"
                           ></v-img
                         ></v-list-item-avatar>
                         <v-list-item-content class="align-self-auto">
@@ -147,7 +147,7 @@
                       <v-list-item three-line class="pl-0 mt-2">
                         <v-list-item-avatar size="50"
                           ><v-img
-                            src="profile.jpg"
+                            src="profile.png"
                           ></v-img
                         ></v-list-item-avatar>
                         <v-list-item-content>
@@ -182,7 +182,7 @@
                             <v-list-item three-line class="pl-0">
                               <v-list-item-avatar class="mt-0" size="40"
                                 ><v-img
-                                  src="profile.jpg"
+                                  src="profile.png"
                                 ></v-img
                               ></v-list-item-avatar>
                               <v-list-item-content

@@ -9,7 +9,7 @@
                 <v-list-item three-line>
                   <v-list-item-avatar size="80"
                     ><v-img
-                      src="profile.jpg"
+                      src="profile.png"
                     ></v-img
                   ></v-list-item-avatar>
                   <v-list-item-content class="align-self-auto">
@@ -134,7 +134,7 @@ export default {
     },
     channel: {
       url: '/channel',
-      avatar: 'profile.jpg'
+      avatar: 'profile.png'
     }
   }),
   components: {

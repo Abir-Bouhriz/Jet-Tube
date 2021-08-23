@@ -2,7 +2,7 @@
   <v-menu offset-y left>
         <template v-slot:activator="{ on }">
           <v-avatar v-on="on">
-            <img :src="`profile.jpg`" />
+            <img :src="`profile.png`" />
           </v-avatar>
         </template>
 
@@ -10,7 +10,7 @@
           <v-list class="overflow-y-auto" style="max-height: calc(100vh - 100px)">
             <v-list-item>
               <v-list-item-avatar>
-                <img :src="`profile.jpg`" />
+                <img :src="`profile.png`" />
               </v-list-item-avatar>
 
               <v-list-item-content>

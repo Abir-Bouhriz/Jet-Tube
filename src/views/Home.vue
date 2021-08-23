@@ -51,7 +51,7 @@
   },
     channel: {
       url: '/channel',
-      avatar: 'profile.jpg'
+      avatar: 'profile.png'
     }
   }),
     components: {
