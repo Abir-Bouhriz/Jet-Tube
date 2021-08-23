@@ -1,9 +1,9 @@
 <template>
   <v-menu offset-y left>
         <template v-slot:activator="{ on }">
-          <v-btn small color="red" depressed fab v-on="on" class="white--text">
-            BA
-          </v-btn>
+          <v-avatar v-on="on">
+            <img :src="`profile.jpg`" />
+          </v-avatar>
         </template>
 
         <v-card>
